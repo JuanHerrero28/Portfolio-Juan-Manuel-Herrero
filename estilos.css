@@ -14,7 +14,7 @@ html{
 }
 /* Seccion Inicio */
 #inicio{
-    background: url(/img/fondo\ 5.jpg);
+    background: url(img/fondo\ 5.jpg);
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -230,7 +230,7 @@ html{
     letter-spacing: 3px;
 }
 .contenedor-skills{
-    background: url(/img/fondo\ 9.jpg);
+    background: url(img/fondo\ 9.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
