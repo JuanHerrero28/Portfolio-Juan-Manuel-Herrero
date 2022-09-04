@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Seccion Inicio -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <a href=""><i class="fa-solid fa-code"></i></a>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">Sobre Mi</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">Portfolio</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">Skills</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Iconos Menu Responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+
+                    </div>
+                    <!-- Iconos Redes Sociales -->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/juan-manuel-herrero-b2a043191/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/JuanHerrero28" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://soundcloud.com/juanherrero28" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">¡Bienvenidos!</p>
+                <h2>Soy <span>Juan Manuel Herrero</span>, Desarrollador Frontend.</h2>
+                <a href="#portfolio">Ir a Portfolio</a>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion Sobre mi -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="/img/juan2.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Juan Manuel Herrero</span></h2>
+            <h3>Desarrollador Frontend</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eum quo voluptate alias. Nihil, perferendis! Possimus, commodi dolores, numquam, maiores dolorem ab delectus repellendus eaque dignissimos quidem quibusdam deserunt? Ipsam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+    <!-- Seccion Skills -->
+    <div class="contenedor-skills" id="skills">
+        <h3 class="titulo-seccion">Skills</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="css" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>React Js</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="react" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Node Js</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="node" class=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- Seccion Portafolio -->
+    <section id="portfolio">
+    <h3 class="titulo-seccion">Mis Proyectos</h3>
+    <div class="fila">
+    <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/Proyecto 1.jpg" alt="">
+        <div class="info">
+            <h4>Descripcion del Proyecto</h4>
+            <p>Demo E-commerce de Indumentaria, utlizando Html - Css - Javascript.</p>
+        </div>
+    </div>
+    <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/Proyecto 4.jpg" alt="">
+        <div class="info">
+            <h4>Descripcion del Proyecto</h4>
+            <p>Demo E-commerce de Indumentaria, utlizando Html - Css - Javascript.</p>
+        </div>
+    </div>
+    <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/Proyecto 3.jpg" alt="">
+        <div class="info">
+            <h4>Descripcion del Proyecto</h4>
+            <p>Demo E-commerce de compra-venta de Tickets para eventos musicales, utilizando React Js</p>
+        </div>
+    </div>
+    <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/Proyecto 5.jpg" alt="">
+        <div class="info">
+            <h4>Descripcion del Proyecto</h4>
+            <p><p>Demo E-commerce de compra-venta de Tickets para eventos musicales, utilizando React Js</p></p>
+        </div>
+    </div>
+    </div>
+    </section>
+    <!-- Seccion Contacto -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje ..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+    <!-- Seccion footer -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+         <div class="box">
+          <figure>
+            <h2 class="juan">Juan Manuel Herrero</h2>
+            <h3 class="juan">Desarrollador Frontend</h3>
+          </figure>
+         </div>
+         <div class="box">
+            <h2 class="proyectos">Proyectos</h2>
+            <a href="https://juanherrero28.github.io/Barong-Juan-Manuel-Herrero/ "target="_blank">Barong-Juan-Manuel-Herrero</a>
+            <a href="https://juanherrero28.github.io/eventos-juan/"target="_blank">EventBoard-Juan-Manuel-Herrero</a>
+         </div>
+         <div class="box">
+            <h2 class="contacto-juan">Contacto</h2>
+          <div class="redes-juan">
+            <a href="https://www.linkedin.com/in/juan-manuel-herrero-b2a043191/" target="_blank" class="juan-redes"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="jh7157696@gmail.com" target="_blank" class="juan-redes"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://github.com/JuanHerrero28" target="_blank" class="juan-redes"><i class="fa-brands fa-github"></i></a>
+            <a href="https://soundcloud.com/juanherrero28" target="_blank" class="juan-redes"><i class="fa-brands fa-soundcloud"></i></a>
+          </div>
+         </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Juan Manuel Herrero</b></small>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
